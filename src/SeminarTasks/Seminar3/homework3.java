@@ -17,7 +17,7 @@ public class homework3 {
         Пример: ArrayList<String> list = new ArrayList<>(List.of("string", "s", "5", "10", "-12", "my_value"));
         Результат: ["string", "s", "my_value"]
          */
-        ArrayList<String> list = new ArrayList<>( List.of( "string", "s", "5", "10", "-12", "my_value", "-rt" ) );
+        ArrayList<String> list = new ArrayList<>( List.of( "string","-s12","-1s","--","-1-","-1ff8","5t5","13314", "s","-123" ,"123", "-", "5", "10", "-12", "my_value", "-rt" ) );
         System.out.println( "ArrayList before removal : " + list );
         removeDigit( list );
         System.out.println( "ArrayList after removal : " + list );
@@ -31,10 +31,27 @@ public class homework3 {
         Iterator<String> stringsList = inputList.iterator();
         while (stringsList.hasNext()) {
             String s = stringsList.next();
-            if (s.charAt( 0 ) == '-' && Character.isDigit( s.charAt( 1 ))) {
+            if (Character.isDigit( s.charAt( 0 )) && s.length() == 1) {
                 stringsList.remove();
-            } else if (Character.isDigit( s.charAt( 0 ))) {
-                stringsList.remove();
+            } else if (s.length() > 1 && s.charAt( 0 ) == '-') {
+                int count = 0;
+                for (int i = 1; i < s.length(); i++) {
+                        if (Character.isDigit(s.charAt( i ))) {
+                            count = count + 1;
+                        }
+                    }
+                if (s.length() - 1  == count) {
+                    stringsList.remove();
+                }
+            } else {
+                int count = 0;
+                for (int i = 0; i < s.length(); i++)
+                    if (Character.isDigit( s.charAt( i ) )) {
+                        count = count + 1;
+                    }
+                if (s.length() == count) {
+                    stringsList.remove();
+                }
             }
         }
     }
