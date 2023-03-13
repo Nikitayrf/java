@@ -21,6 +21,13 @@ public class homework3 {
         System.out.println( "ArrayList before removal : " + list );
         removeDigit( list );
         System.out.println( "ArrayList after removal : " + list );
+
+        System.out.println("Second solution");
+
+        ArrayList<String> list2 = new ArrayList<>( List.of( "string","-s12","-1s","--","-1-","-1ff8","5t5","13314", "s","-123" ,"123", "-", "5", "10", "-12", "my_value", "-rt" ) );
+        System.out.println( "ArrayList before removal : " + list2 );
+        list2.removeIf( homework3::isDigit );
+        System.out.println( "ArrayList after removal : " + list2 );
     }
     static ArrayList<Integer> randomArraylist() {
         ArrayList<Integer> list = new ArrayList<>();
@@ -53,6 +60,15 @@ public class homework3 {
                     stringsList.remove();
                 }
             }
+        }
+    }
+
+    private static boolean isDigit(String s) throws NumberFormatException {
+        try {
+            Integer.parseInt(s);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
         }
     }
 }
