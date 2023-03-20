@@ -6,9 +6,8 @@ import java.util.List;
 import java.util.Map;
 
 public class homework5 {
-    public static void main(String[] args) {
+    static void collectStats(String text) {
         Map<Integer, List<String>> stats = new HashMap<>();
-        String text = "Мороз и солнце день чудесный Еще ты дремлешь друг прелестный Пора красавица проснись";
         String[] list = text.split( " " );
         for (String item: list) {
             if (!stats.containsKey( item.length() )) {
@@ -22,5 +21,9 @@ public class homework5 {
             for (String s : printW) { System.out.print( s + " " ); }
             System.out.println();
         }
+    }
+    public static void main(String[] args) {
+        collectStats("Мороз и солнце день чудесный Еще ты дремлешь друг прелестный Пора красавица проснись");
+
     }
 }
