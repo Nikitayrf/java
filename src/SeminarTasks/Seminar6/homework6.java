@@ -8,18 +8,13 @@ import static SeminarTasks.Seminar6.Person.teska;
 
 public class homework6 {
     public static void main(String[] args) {
-        Person p1 = new Person(); p1.firstName = "Ivan"; p1.lastName = "Ivanov"; p1.age = 34; p1.gender = "men"; p1.id = 100;
-        Person p2 = new Person(); p2.firstName = "Petr"; p2.lastName = "Petrov"; p2.age = 30; p2.gender = "men"; p2.id = 200;
-        Person p3 = new Person(); p3.firstName = "Petr"; p3.lastName = "Petersenian"; p3.age = 32; p3.gender = "men"; p3.id = 200;
-        Person p4 = new Person(); p4.firstName = "Maria"; p4.lastName = "Sidorova"; p4.age = 20; p4.gender = "women"; p4.id = 300;
-        Person p5 = new Person(); p5.firstName = "Irina"; p5.lastName = "Artemieva"; p5.age = 25; p5.gender = "women"; p5.id = 234;
-        Person p6 = new Person(); p6.firstName = "Andrey"; p6.lastName = "Ivanov"; p6.age = 18; p6.gender = "men"; p6.id = 432;
-        Person p7 = new Person();
-        p7.firstName = "Ivan";
-        p7.lastName = "Kozlov";
-        p7.age = 30;
-        p7.gender = "men";
-        p7.id = 534;
+        Person p1 = new Person("Ivan", "Ivanov", 34, "men", 100);
+        Person p2 = new Person("Petr", "Petrov", 30, "men", 200);
+        Person p3 = new Person("Petr", "Petersenian", 32, "men", 200);
+        Person p4 = new Person("Maria", "Sidorova", 20, "women", 300);
+        Person p5 = new Person("Irina", "Artemieva", 25, "women", 234);
+        Person p6 = new Person("Andrey", "Ivanov", 18, "men",  432);
+        Person p7 = new Person("Ivan", "Kozlov", 30, "men", 534);
 
         System.out.println(p1);  // fn:Ivan ln:Ivanov age:34 gender:men id:100
 
