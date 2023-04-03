@@ -7,6 +7,7 @@ public class Printer {
     void print(String inputString) {
         System.out.println(inputString);
     }
+
     void saveFile(String inputString) {
 
         try {
