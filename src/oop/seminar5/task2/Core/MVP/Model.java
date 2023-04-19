@@ -61,7 +61,6 @@ public class Model {
         try (FileWriter writer = new FileWriter(path, false)) {
             for (int i = 0; i < currentBook.count(); i++) {
                 Contact contact = currentBook.getCotact(i);
-//                writer.append(String.format("%s %s %s\n", contact.firstName, contact.lastName, contact.phone));
                 writer.append(String.format("%s \n", contact.firstName));
                 writer.append(String.format("%s \n", contact.lastName));
                 writer.append(String.format("%s \n", contact.phone));

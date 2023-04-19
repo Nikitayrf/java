@@ -15,14 +15,12 @@ public class Model {
                 System.out.println("\nfile.created");
                 FileWriter fileWriter = new FileWriter(file, true);
                 fileWriter.write(inputString);
-//                fileWriter.append( '\n' );
                 fileWriter.flush();
                 fileWriter.close();
             } else {
                 System.out.println("\nfile.existed");
                 FileWriter fileWriter = new FileWriter(file, true);
                 fileWriter.write(inputString);
-//                fileWriter.append( '\n' );
                 fileWriter.flush();
                 fileWriter.close();
             }
