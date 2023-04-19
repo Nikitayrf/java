@@ -3,6 +3,7 @@ package oop.seminar2.task2;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+
 @Getter
 @Setter
 @ToString

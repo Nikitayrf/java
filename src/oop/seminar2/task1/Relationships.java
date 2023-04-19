@@ -1,9 +1,9 @@
 package oop.seminar2.task1;
 
 public enum Relationships {
-    PARENT( "Parents" ),
-    WIFE( "Жена" ),
-    HUSBANT( "Муж" ),
+    PARENT( "Parent" ),
+    WIFE( "Wife" ),
+    HUSBANT( "Husbant" ),
     CHILDREN( "Children" );
     private String description;
 
