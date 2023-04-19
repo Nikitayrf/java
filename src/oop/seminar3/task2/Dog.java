@@ -8,18 +8,18 @@ public class Dog extends Animals implements Communication {
     @Override
     public void meeting(Animals animal) {
         if (animal instanceof Dog) {
-            System.out.println("Battle Gaf Gaf");
+            System.out.println( "Battle Gaf Gaf" );
         } else if (animal instanceof Cat) {
-            System.out.println("Attack cat Uaf Uaf");
+            System.out.println( "Attack cat Uaf Uaf" );
         }
     }
 
     @Override
     public void meeting(Person person) {
         if (person instanceof Men) {
-            System.out.println("Wag the tail");
+            System.out.println( "Wag the tail" );
         } else if (person instanceof Children) {
-            System.out.println("Run run run");
+            System.out.println( "Run run run" );
         }
     }
 }

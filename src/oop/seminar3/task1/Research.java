@@ -7,7 +7,6 @@ public class Research {
     private final HashMap<Node, Node> tree;
 
     public Research(Repository<Person> geoTree) {
-
         tree = geoTree.getDs();
     }
 

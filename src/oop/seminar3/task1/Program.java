@@ -9,12 +9,11 @@ public class Program {
 
         Repository<Person> repo = new Repository<>( "repo_1" );
         repo.append( f1, Relationships.FATHER, c1 );
-        repo.append( h1, Relationships.HUSBANT, w1 );
-        System.out.println(repo);
+        repo.append( h1, Relationships.HUSBAND, w1 );
+        System.out.println( repo );
 
-        Research research =  new Research(repo);
-        System.out.println(research.findChildren( f1 ));
-        System.out.println(research.findFather( c1 ));
-
+        Research research = new Research( repo );
+        System.out.println( research.findChildren( f1 ) );
+        System.out.println( research.findFather( c1 ) );
     }
 }

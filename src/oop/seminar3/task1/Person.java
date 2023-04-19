@@ -7,7 +7,7 @@ public abstract class Person {
     private String firstName;
     private int age;
 
-    public Person(String firstName, int age ) {
+    public Person(String firstName, int age) {
         this.firstName = firstName;
         this.age = age;
     }
@@ -15,5 +15,5 @@ public abstract class Person {
     @Override
     public String toString() {
         return String.format( "%s, %d", firstName, age );
-}
+    }
 }

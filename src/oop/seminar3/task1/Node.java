@@ -1,7 +1,6 @@
 package oop.seminar3.task1;
 
 public class Node {
-
     Person p1;
     Relationships re;
     Person p2;
