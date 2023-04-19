@@ -10,7 +10,7 @@ public class Menu {
             System.out.print( "\033[H\033[J" );
             Numbers result = new Numbers( 0 );
             Model log = new Model();
-            log.saveFile("Input " + num.toString() );
+            log.saveFile( "Input " + num.toString() );
             switch (key) {
                 case "1" -> {
                     if (num instanceof CalculateComplex) {
@@ -41,10 +41,10 @@ public class Menu {
                     }
                 }
                 default -> {
-                    System.out.println("Такой команды нет");
+                    System.out.println( "Такой команды нет" );
                 }
             }
-            log.saveFile(" Result " + result.toString() + "\n");
+            log.saveFile( " Result " + result.toString() + "\n" );
         }
     }
 }

@@ -1,15 +1,19 @@
 package oop.seminar5.task1;
 
 public class CalculateRational extends Numbers implements Calculating<Numbers> {
-
     public CalculateRational(double x, double y) {
         super( x, y );
     }
 
     @Override
-    public Numbers sum() { return new Numbers( x + y ); }
+    public Numbers sum() {
+        return new Numbers( x + y );
+    }
+
     @Override
-    public Numbers diff() { return new Numbers( x - y ); }
+    public Numbers diff() {
+        return new Numbers( x - y );
+    }
 
     @Override
     public Numbers mult() {
@@ -17,7 +21,9 @@ public class CalculateRational extends Numbers implements Calculating<Numbers> {
     }
 
     @Override
-    public Numbers div() { return new Numbers( x / y ); }
+    public Numbers div() {
+        return new Numbers( x / y );
+    }
 
     @Override
     public String toString() {

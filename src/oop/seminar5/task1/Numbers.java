@@ -5,6 +5,7 @@ public class Numbers extends ValuesNumber {
         super.x = x;
         super.y = y;
     }
+
     public Numbers(double x) {
         super.x = x;
     }
@@ -28,5 +29,4 @@ public class Numbers extends ValuesNumber {
                 ", y=" + y +
                 '}';
     }
-
 }

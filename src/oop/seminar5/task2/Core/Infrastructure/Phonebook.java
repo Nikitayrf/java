@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Phonebook {
-
     private List<Contact> contacts;
 
     public Phonebook() {
@@ -41,12 +40,10 @@ public class Phonebook {
     }
 
     public List<Contact> getContacts() {
-        // if ???...
         return contacts;
     }
 
     public int count() {
         return contacts.size();
     }
-
 }

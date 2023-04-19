@@ -1,6 +1,6 @@
 package oop.seminar5.task2.Core.Models;
 
-public class Contact  implements Comparable<Contact> {
+public class Contact implements Comparable<Contact> {
     public String firstName;
     public String lastName;
     public String phone;
@@ -13,15 +13,14 @@ public class Contact  implements Comparable<Contact> {
 
     @Override
     public int compareTo(Contact o) {
-        // ???...
         return 0;
     }
 
     @Override
     public boolean equals(Object obj) {
-        Contact t = (Contact)obj;
+        Contact t = (Contact) obj;
         return this.firstName == t.firstName
                 && this.lastName == t.lastName
-        ;
+                ;
     }
 }
