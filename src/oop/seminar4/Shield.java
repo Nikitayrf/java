@@ -1,9 +1,9 @@
 package oop.seminar4;
 
 public abstract class Shield implements Protection {
-    private static int protection;
     protected static int number;
     private String name;
+    private static int protection;
 
     static {
         number = 0;

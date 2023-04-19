@@ -17,7 +17,7 @@ public class Main {
         Battle fight2 = new Battle( archer2, knight1 );
         fight2.run();
 
-        ArcherWithoutShield archerWithout1 = new ArcherWithoutShield( "Volh", 100, new Bow(20) );
+        ArcherWithoutShield archerWithout1 = new ArcherWithoutShield( "Volh", 100, new Bow( 20 ) );
         Battle fight3 = new Battle( archer1, archerWithout1 );
         fight3.run();
     }
