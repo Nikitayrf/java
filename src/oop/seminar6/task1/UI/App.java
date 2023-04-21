@@ -1,6 +1,6 @@
 package oop.seminar6.task1.UI;
 
-import oop.seminar6.task1.Format.Txt;
+import oop.seminar6.task1.Format.SaveTxt;
 import oop.seminar6.task1.Mathematic.CalculateArea.CalculateComplex;
 import oop.seminar6.task1.Mathematic.CalculateArea.CalculateRational;
 import oop.seminar6.task1.Mathematic.Numbers.Num;
@@ -15,7 +15,7 @@ public class App {
             String key = in.next();
             System.out.print( "\033[H\033[J" );
             Num result = new Num( 0 );
-            Txt log = new Txt();
+            SaveTxt log = new SaveTxt();
             log.saveFile( "Input " + num.toString() );
 
             switch (key) {

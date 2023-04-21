@@ -10,7 +10,7 @@ public class CalculateComplex extends Num implements Calculating<Num> {
 
     @Override
     public Num sum() {
-        return new Num( (x + y), (w + z) );
+        return new Num( (x + w), (y + z) );
     }
 
     @Override

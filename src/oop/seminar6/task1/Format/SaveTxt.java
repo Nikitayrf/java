@@ -1,9 +1,11 @@
 package oop.seminar6.task1.Format;
 
+import oop.seminar6.task1.Interface.Saveable;
+
 import java.io.File;
 import java.io.FileWriter;
 
-public class Txt extends TextFormat {
+public class SaveTxt implements Saveable {
     @Override
     public void saveFile(String inputString) {
 

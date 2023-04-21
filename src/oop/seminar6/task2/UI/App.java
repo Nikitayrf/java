@@ -7,7 +7,7 @@ import oop.seminar6.task2.Core.MVP.View;
 import java.util.Scanner;
 
 public class App {
-    public static void ButtonClick() {
+    public static void buttonClick() {
         System.out.print( "\033[H\033[J" );
         View view = new ConsoleView();
         Presenter presenter = new Presenter( view, Config.pathDb );

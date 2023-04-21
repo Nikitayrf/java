@@ -5,7 +5,7 @@ import oop.seminar6.task2.Core.MVP.View;
 import java.util.Scanner;
 
 public class ConsoleView implements View {
-    Scanner in;
+    private Scanner in;
 
     public ConsoleView() {
         in = new Scanner( System.in );

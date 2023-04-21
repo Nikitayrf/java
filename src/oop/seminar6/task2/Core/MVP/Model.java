@@ -6,7 +6,7 @@ import oop.seminar6.task2.Core.Models.Contact;
 import java.io.*;
 
 public class Model {
-    Phonebook currentBook;
+    private Phonebook currentBook;
     private int currentIndex;
     private String path;
 
