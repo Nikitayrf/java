@@ -2,6 +2,7 @@ package oop.seminar1.task1;
 
 import java.io.File;
 import java.io.FileWriter;
+import java.io.IOException;
 
 public class Printer {
     void print(String inputString) {
@@ -24,7 +25,7 @@ public class Printer {
             } else {
                 System.out.println("\nfile.existed");
             }
-        } catch (Exception e) {
+        } catch (IOException e) {
             e.getMessage();
         } finally {
             System.out.println(inputString);

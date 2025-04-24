@@ -1,15 +1,21 @@
 package oop.seminar1.task1;
 
-import lombok.Getter;
-import lombok.Setter;
+
 import java.util.HashMap;
 
-@Getter
-@Setter
+
 public class GeoTree {
     private HashMap<Node, Node> tree = new HashMap<>();
     public void append(Person parent, Person children) {
         tree.put(new Node( parent, Relationships.PARENT, children ), new Node( children, Relationships.CHILDREN, parent ));
+    }
+
+    public HashMap<Node, Node> getTree() {
+        return tree;
+    }
+
+    public void setTree(HashMap<Node, Node> tree) {
+        this.tree = tree;
     }
 
     @Override

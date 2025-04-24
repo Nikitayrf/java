@@ -1,10 +1,8 @@
 package oop.seminar3.task1;
 
-import lombok.Getter;
 
 import java.util.HashMap;
 
-@Getter
 public class Repository<T extends Person> {
     private HashMap<Node, Node> ds;
     private String name;
@@ -23,6 +21,22 @@ public class Repository<T extends Person> {
             case BROTHER -> ds.put( new Node( p1, re, p2 ), new Node( p2, Relationships.SISTER, p1 ) );
             case SISTER -> ds.put( new Node( p1, re, p2 ), new Node( p2, Relationships.BROTHER, p1 ) );
         }
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public HashMap<Node, Node> getDs() {
+        return ds;
+    }
+
+    public void setDs(HashMap<Node, Node> ds) {
+        this.ds = ds;
     }
 
     @Override
