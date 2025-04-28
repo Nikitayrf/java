@@ -5,10 +5,12 @@ public class Main {
         CalculateComplex calcCompl1 = new CalculateComplex( 15, 37 );
         calcCompl1.setW( 2.0 );
         calcCompl1.setZ( 3.3 );
-        System.out.print( "sum = " + calcCompl1.sum() );
+        System.out.println( "sum = " + calcCompl1.sum() );
         System.out.println( "diff = " + calcCompl1.diff() );
         System.out.println( "mult = " + calcCompl1.mult() );
         System.out.println( "div = " + calcCompl1.div() );
+
+        System.out.println();
 
         CalculateRational calcRation1 = new CalculateRational( 3, 30 );
         System.out.println( "sum = " + calcRation1.sum() );

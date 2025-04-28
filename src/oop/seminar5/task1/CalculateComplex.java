@@ -1,4 +1,4 @@
-package oop.seminar5.task1;
+ package oop.seminar5.task1;
 
 public class CalculateComplex extends Numbers implements Calculating<Numbers> {
     public CalculateComplex(double x, double y) {
